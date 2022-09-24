@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Information</title>
+  </head>
+  <body>
+    <main>
+      <form action="https://formspree.io" method="POST">
+        <fieldset class="personalData">
+          <legend>Personal Data</legend>
+          <!-- Name -->
+          <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="John" required />
+          </div>
+          <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Doe" required />
+          </div>
+          <!-- Address -->
+          <div>
+            <label for="add">Street:</label>
+            <input
+              type="text"
+              id="add"
+              name="add"
+              value="Bahnstrasse"
+              required
+            />
+          </div>
+          <div>
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" value="21502" required />
+          </div>
+          <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" value="Berlin" />
+          </div>
+          <!--Phone-->
+          <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+
+          <!-- email -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" size="30" required />
+          </div>
+          <!-- text -->
+          <div>
+            <label for="story">Comment:</label>
+            <textarea
+              id="story"
+              name="story"
+              rows="5"
+              cols="33"
+              placeholder=" Tell us more about important colors, etc."
+            >
+            </textarea>
+          </div>
+          <!-- Products -->
+          
+        </fieldset>
+        <fieldset class="products">
+          <legend>Products</legend>
+          <div class="radio">
+            <h5>Web Design:</h5>
+            <input
+              type="radio"
+              id="individual"
+              name="web-design"
+              value="individual"
+              checked
+            />
+            <label for="fname">Individual</label>
+            <input
+              type="radio"
+              id="template"
+              name="web-design"
+              value="template"
+            />
+            <label for="fname">Template</label>
+          </div>
+
+          <div class="checkBox">
+            <h5>Web Development:</h5>
+            <div>
+              <input
+                type="checkbox"
+                id="htmlcss"
+                name="htmlcss"
+                value="htmlcss"
+              />
+              <label for="htmlcss"> HTML&CSS</label>
+            </div>
+            <div>
+              <input type="checkbox" id="js" name="js" value="js" />
+              <label for="js"> JavaScript</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="mongodb"
+                name="mongodb"
+                value="mongodb"
+              />
+              <label for="mongodb">MongoDB</label>
+            </div>
+          </div>
+          <!-- Project Start -->
+          <div class="date">
+            <h5>Project Start</h5>
+            <div>
+              <label for="start">Project Start:</label>
+              <input type="date" id="start" name="start" />
+            </div>
+            <div>
+              <label for="end">Project End:</label>
+              <input type="date" id="end" name="end" />
+            </div>
+          </div>
+          <div>
+            <select id="os" name="os">
+              <option value="windows">Windows</option>
+              <option value="linux">Linux</option>
+            </select>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
